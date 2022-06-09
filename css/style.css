@@ -1,0 +1,464 @@
+
+:root{
+    --background-color:#f4f4f4 ;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.header{
+        padding: 0 1rem;
+        width: 100vw;
+        height: 4rem;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+}
+.header .logo{
+margin-top: -0.5rem;
+margin-left: 1rem;
+}
+.navbar-list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.043) ;
+}
+.navbar-item,
+.navbar-item:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    transition: 0.3sec;
+}
+.navbar-item:hover,.navbar-item:active{
+    color: #9b451e;
+}
+.mobile-nav-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.mobile-nav-icon{
+    width: 3rem;
+    height: 3rem;
+    color: black;
+    margin-top: 3px;
+}
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
+/* css of banner is start */
+.slide{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+}
+.slide-container .text{
+    font-size: 12rem;
+    color: #c0c0c0;
+}
+.slide-container .logo-1{
+    width: 12rem;
+    height: 12rem;
+}
+.slide-container {
+    display: none;
+}
+.slide-container.active{
+    display: block;
+}
+.contain-lastrow #prev{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.contain-lastrow #next{
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.contain-lastrow{
+   
+    position:absolute;
+    width: 100vw;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    bottom: 1rem;
+    font-size: 1.5rem;   
+}
+.deep-errow{
+    margin-right: 6rem;
+    rotate: 180deg;
+}
+.borwse-collection-1{
+    font-size: 1.5rem;
+}
+.browse-collection{
+    cursor: pointer;
+}
+/* css of banner is over  */
+
+
+/* css of section-1 is start  */
+.recent-collection{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    text-align: center;
+}
+.section-1 .recent-collection-information{
+    font-size: 1rem;
+    color: #8a8787;
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.card-container{
+
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    transition:  img 1s;
+}
+.card-image:hover{
+    transform: scale(1.1);
+}
+
+.card-left,
+.card-right,
+.card-middle{
+    flex-basis: 30%;
+    padding: 1.6rem;
+    background-color: #f4f4f4;
+}
+.card-image img{
+    width: 100%;
+    height: auto;
+   
+}
+.card-left  .btn,
+.card-right  .btn,
+.card-middle  .btn{
+    margin-top: 5rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+/* css of section-1 is over */
+
+
+/* css of btn is start */
+.btn{
+    background-color: transparent;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    border: 3px solid #C0C0C0;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    
+}
+/* css if btn is over  */
+
+
+/* css of section 2 and 4 is start */
+.comman-section,
+.comman-section-about{
+    width: 90vw;
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+.comman-section{
+    margin-top: 5rem;
+}
+.comman-section .right-side img,
+.comman-section-about .left-side img{
+    width: auto;
+    height: 35rem;
+    /* margin-top: 6rem; */
+}
+.comman-section .left-side,
+.comman-section-about .right-side{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+} 
+.comman-section .left-side{
+    padding-left: 7rem;
+}
+.comman-section-about .right-side{
+    padding-right: 7rem;
+}
+.comman-section .left-side h2,
+.comman-section-about .right-side h2{
+    width: 40rem;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-style: normal;
+}
+.comman-section .left-side p,
+.comman-section-about .right-side p{
+   color: #8a8787;
+    text-transform: lowercase;
+}
+/* css of section 2 and 4 is over */
+
+
+/*  css of section-3 is start */
+
+
+.main-product{
+    width: 90%;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin: 5rem auto;
+}
+
+
+
+/* css of section-3 is over */
+
+
+/* css of gallery section is start */
+.heading-of-gallery{
+    margin:5rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+/* css of gallery section  is over */
+
+
+/* css of section-5 is start */
+.container-who-we-are{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 5rem 0;
+}
+.container-who-we-are .left img{
+    width: 45vh;
+    z-index: 2;
+    border-radius:22.5vh;
+    position: relative;
+    top: 50%;
+    left: 25%;
+    transform: translate(0,-50%);
+    
+}
+.container-who-we-are .left{
+    background-color:#7393B3;
+    flex-basis: 50%;
+    height: 40vh;
+}
+.container-who-we-are .middle{
+   
+    flex-basis: 25%;
+    height: 50vh;
+    border-radius: 10px;
+    border: 6px solid #7393B3;
+    font-size: 2rem;
+
+}
+.container-who-we-are .middle .content{
+   
+    margin: 1rem 1rem;
+  
+}
+.container-who-we-are .right{
+    background-color: #7393B3;
+    flex-basis: 10%;
+    height: 40vh;
+}
+/* css of section-5 is over */
+
+
+/*  css of footer section  is start */
+footer{
+    width: 100%;
+   
+    bottom: 0;
+    background-color: #191919;
+    color: #fff ;
+   
+    padding: 1rem;
+    /* border-top-left-radius: 8rem; */
+    border-top-right-radius: 8rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+
+}
+.footer-row{
+    width: 85%;
+    margin: auto;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-col{
+    flex-basis: 25%;
+    padding: 0.625rem;
+}
+.footer-col:nth-child(2),.footer-col:nth-child(3){
+    flex-basis: 15%;
+}
+.footer-logo{
+    width:5rem ;
+    bottom: 2rem;
+}
+.footer-col h3{
+    width: fit-content;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+.email-address{
+    width: fit-content;
+    border-bottom: 1px solid #666666;
+    margin: 1rem 0;
+}
+.footer-col ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.footer-col ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer-col ul li a:hover{
+    color: red;
+}
+.footer-col form{
+    display: flex;
+}
+.footer-col form input{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border: 0;
+    outline: none;
+    background-color:#666666 ;
+
+}
+.footer-col form button{
+    padding: 0 0.5rem;
+    background-color: white;
+    border: 0;
+    font-size: 0.6rem;
+    outline: none;
+}
+.footer-col form button:hover{
+    background-color: rgb(191, 155, 121);
+    color: black;
+
+}
+hr{
+    width: 90%;
+    margin: 1rem auto;
+    border-bottom:1px solid white ;
+}
+.copyright{
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: #666666;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background-color: #9b451e;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+/* animationn of footer is start */
+@keyframes moving{
+    0%{
+        left:-20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+/* css of footer section  is over */
+
+
+
+
+/* css of gallery page is start */
+
+.gallery-header{
+    position: relative;
+}
+.gallery-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 3rem 0;
+}
+.gallery-col-left,
+.gallery-col-right,
+.gallery-col-middle{
+    flex-basis: 25%;
+    padding: 1.6rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 40px 2px #a6a6a686;
+}
+.gallery-image img{
+    width: 100%;
+    height: auto;
+   
+}
